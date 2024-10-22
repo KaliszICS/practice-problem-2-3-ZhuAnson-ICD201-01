@@ -1,7 +1,8 @@
 
 
 def q1(): 
-  word = input("Enter a word: ")
+  word = input("In: ")
+
   if word[-3:] == "ife":
     print("-ives")
   elif word[-2:] == "ey":
@@ -12,22 +13,24 @@ def q1():
     print("-s")
 
 def q2(): 
-  num = int(input("Input an integer:"))
+  num = int(input("In: "))
   if num > 0:
     print(f"{num} is positive")
   elif num < 0:
     print(f"{num} is negative")
+  else:
+    print("")
 
 def q3():
-  side1 = float(input("Input a side length: "))
-  side2 = float(input("Input a side length: "))
-  side3 = float(input("Input a side length: "))
+  side1 = float(input("Input a number: "))
+  side2 = float(input("Input a number: "))
+  side3 = float(input("Input a number: "))
   if (side1 + side2 > side3) and (side1 + side3 > side2) and (side2 + side3 > side1): 
-   if side1 == side2 == side3:
+    if side1 == side2 == side3:
       print("Equilateral")
     elif side1 == side2 or side1 == side3 or side2 == side3:
       print("Isosceles")
-   elif
+    else:
       print("Scalene")
   else:
     print("No Triangle")
@@ -37,6 +40,6 @@ def q3():
 #Do not alter the following code
 #Comment out the following code when running your tests
 
-q1()
-q2()
-q3()
+# q1()
+# q2()
+# q3()
